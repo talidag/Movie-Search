@@ -1,0 +1,150 @@
+body,
+html {
+  height: 100%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+  background-image: url(images/posters.png);
+  background-size: cover;
+  background-color: #20262e;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: white;
+  margin-bottom: 1em;
+}
+
+nav > h2 {
+  font-size: 1.9rem;
+  margin: 0 0 0.3em 0.7em;
+}
+
+nav > a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 1em 1em 0.3em;
+}
+
+/* Search bar */
+
+#search,
+#seach-text {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 1em;
+}
+
+#search {
+  background: #ffffff;
+  color: grey;
+  cursor: pointer;
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 35px;
+}
+
+/* Intro */
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+}
+
+#intro-text,
+#sorry {
+  font-size: 2rem;
+}
+
+#icon {
+  font-size: 4rem;
+}
+
+#sorry {
+  text-align: center;
+  color: grey;
+}
+/* Others */
+
+#search-movies {
+  color: inherit;
+}
+
+#seach-text {
+  font-size: 1rem;
+  padding: 0.4em 2em;
+  border: solid 3px 474e68;
+  border-radius: 35px;
+}
+
+/* Movie container */
+
+#results {
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  padding: 30px;
+}
+
+.each-movie {
+  display: flex;
+  height: 200px;
+  font-size: 0.8rem;
+  border-top: 2px solid grey;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+.each-movie > .poster {
+  margin-right: 1em;
+  max-width: 160px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.img-text > h3 {
+  font-size: 1.2rem;
+  display: inline;
+}
+
+.rating {
+  display: inline;
+}
+
+#star {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  margin-top: 0.4em;
+  margin-right: 0;
+  display: block;
+}
+
+#star:hover {
+  filter: hue-rotate(90deg);
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.plot {
+  font-size: 0.9rem;
+  line-height: 1.5em;
+}
+/* Favourites */
+
+#fav {
+  color: black;
+}
